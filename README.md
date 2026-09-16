@@ -73,7 +73,7 @@ Website Content: Developed website content relevant to the poultry farm.
 3. Locate the main HTML file (usually `index.html`).
 4. Open the HTML file in a web browser to view the website.
 
-**Repository URL:** [Insert your repository link here]
+**Repository URL: [https://github.com/XiluvaNdlovu/POE-WEDE5020.git]
 
 ##  Sitemap
 
