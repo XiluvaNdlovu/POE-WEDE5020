@@ -90,7 +90,40 @@ Ndlovu Poultry Farm
 
 ##  Changelog
 
-### [v1.0.0] – September 2026
+### Part 2 feedback corrections
+31 October 2026
+Feedback: invalid HTML structure, with outer duplicate HTML wrappers on every page.
+Change: removed the duplicated outer <html>, <head> and <body> wrapper (and the invalid <h> tags) from index.html, about.html, services.html, contact.html and the enquiries page. Each page now has one valid HTML structure.
+Feedback: ensure the root submission files are the actual completed website files.
+Change: replaced the root HTML files with the corrected, completed versions, and confirmed that index.html, about.html, services.html, contact.html, enquiries.html, css/styles.css and js/script.js sit in the repository root and match the working site.
+Feedback: inconsistent filenames.
+Change: renamed enquires.html to enquiries.html and updated the navigation link on every page.
+Feedback: rename image files consistently without spaces or punctuation, then update image paths.
+Change: renamed live chickens.jpg to live-chickens.jpg, eggs. jpg.jpg to eggs.jpg and chicken. jpg.jpg to chicken.jpg, and updated every src path in the HTML. Also corrected the alt text so each image describes itself.
+2 November 2026
+Feedback: correct the README sitemap and repository URL.
+Change: added the correct repository URL, live site URL, sitemap.xml and robots.txt links at the top of this README, and replaced the placeholder address inside sitemap.xml and robots.txt with the live site address.
+Feedback: expand the changelog with dated, feedback-based entries.
+Change: rewrote this changelog with a dated entry for each change, split into Part 2 feedback corrections and Part 3 additions.
+Feedback: add or provide evidence of multiple descriptive GitHub commits.
+Change: pushed the Part 3 work to the repository in several separate commits, each with a descriptive message. See the repository's commit history.
+Feedback: navigation menu only partially adapted for mobile.
+Change: noted for review. The navigation already wraps and centres at tablet and phone widths in styles.css.
+## Part 3 additions
+31 October 2026
+Added SEO meta tags (description, keywords, author) to every page and unique page titles.
+Added js/script.js with client-side form validation, error handling and scroll animations.
+1 November 2026
+Added robots.txt and sitemap.xml.
+Added the contact form email (mailto) functionality and a message type field.
+Added search and sort to the Services page.
+Added the FAQ accordion to the About page.
+Added the gallery and lightbox to the Home page.
+Added the Leaflet interactive map to the Contact page, replacing the Google Maps iframe.
+2 November 2026
+Added the enquiry form AJAX submission and cost/availability response.
+Added the dynamic product price list to the Services page, built with JavaScript.
+Published the website with GitHub Pages.
 
 #### Added
 
@@ -114,6 +147,10 @@ Development Tools
 Microsoft (2024) Visual Studio Code Documentation. Microsoft Corporation. Available at: https://code.visualstudio.com/docs (Accessed: 16 September 2026).
 AI Assistance
 Anthropic (2024) Claude: AI Assistant. Anthropic PBC. Available at: https://claude.ai/ (Accessed: 16 September 2026).
-
+Leaflet. (n.d.). Leaflet - an open-source JavaScript library for interactive maps. https://leafletjs.com
+OpenStreetMap contributors. (n.d.). OpenStreetMap. https://www.openstreetmap.org
+MDN Web Docs. (n.d.). Web technology for developers. https://developer.mozilla.org
+JSONPlaceholder. (n.d.). Free fake API for testing and prototyping. https://jsonplaceholder.typicode.com
+GitHub. (n.d.). GitHub Pages documentation. https://docs.github.com/en/pages
 1. [Insert author, year, title, and URL of any research source used.]
 2. [Insert any external code, framework, or design resource used.]
