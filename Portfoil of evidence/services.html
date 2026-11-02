@@ -1,19 +1,12 @@
 <!DOCTYPE html>
-  <html>
-    <head>
-        <title>
-            Services
-        </title>
-    </head>
-    <body>
-
-<h>services</h>
-<p><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ndlovu Poultry Farm - Services</title>
+ <meta name="description" content="Live chicken sales, slaughtering, cleaning, packaging, delivery, eggs and chicks from Ndlovu Poultry Farm.">
+<meta name="keywords" content="poultry services, chicken slaughtering, chicken delivery, wholesale chickens">
+<meta name="author" content="Xiluva Ndlovu">  
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -28,7 +21,7 @@
                 <li><a href="about.html" class="nav-link">About Us</a></li>
                 <li><a href="services.html" class="nav-link active">Services</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
-                <li><a href="enquires.html" class="nav-link">Enquiries</a></li>
+                <li><a href="enquiries.html" class="nav-link">Enquiries</a></li>
             </ul>
         </div>
     </nav>
@@ -37,6 +30,15 @@
     <main class="container">
         <section class="services">
             <h1>Our Services</h1>
+            <div class="service-tools">
+    <input type="text" id="serviceSearch" placeholder="Search services...">
+    <select id="serviceSort">
+        <option value="default">Sort: Default</option>
+        <option value="az">Name A to Z</option>
+        <option value="za">Name Z to A</option>
+    </select>
+</div>
+<p id="noResults" style="display:none;">No services match your search.</p>
             <p>Ndlovu Poultry Farm offers more than just quality products - we provide convenient services to meet all your needs.</p>
 
             <div class="services-grid">
@@ -69,7 +71,7 @@
                 <!-- SERVICE 3 -->
                 <div class="service-card">
                     <div class="service-icon"></div>
-                     <img src="images/chicken. jpg.jpg" alt=" Plucking Chickens" class="services-image">
+                    <img src="images/plucking chicken. jpg.jpg" alt="Plucking chickens" class="services-image">
                     <h2>Cleaning Service</h2>
                     <p>Full cleaning service after slaughtering - we remove intestines, feathers, and prepare the chicken for cooking. Ready-to-cook chickens!</p>
                     <div class="service-details">
@@ -83,13 +85,13 @@
                 <!-- SERVICE 4 -->
                 <div class="service-card">
                     <div class="service-icon"></div>
-                    <h2>Packaging & Delivery</h2>
+                    <h2>Packaging &amp; Delivery</h2>
                     <p>We package your products hygienically and offer delivery services to your location for convenience and freshness.</p>
                     <div class="service-details">
                         <h3>Delivery Area:</h3>
                         <p>Local areas in Mpumalanga</p>
                         <h3>Packaging:</h3>
-                        <p>Fresh & hygienic</p>
+                        <p>Fresh &amp; hygienic</p>
                     </div>
                 </div>
 
@@ -113,7 +115,7 @@
                     <p>Quality chicks for those looking to start their own poultry rearing. We provide healthy, well-bred chicks.</p>
                     <div class="service-details">
                         <h3>Types:</h3>
-                        <p>Broiler & layer chicks</p>
+                        <p>Broiler &amp; layer chicks</p>
                         <h3>Guidance:</h3>
                         <p>Advice on rearing available</p>
                     </div>
@@ -122,7 +124,7 @@
                 <!-- SERVICE 7 -->
                 <div class="service-card">
                     <div class="service-icon"></div>
-                    <h2>Bulk & Wholesale</h2>
+                    <h2>Bulk &amp; Wholesale</h2>
                     <p>Special pricing for restaurants, catering companies, and retail businesses. Volume discounts available.</p>
                     <div class="service-details">
                         <h3>Minimum Order:</h3>
@@ -147,6 +149,10 @@
             </div>
 
             <!-- HOW TO ORDER SECTION -->
+             <section class="price-list">
+    <h2>Product Price List</h2>
+    <div id="productList" class="product-grid"></div>
+</section>
             <section class="how-to-order">
                 <h2>How to Order</h2>
                 <div class="steps">
@@ -177,14 +183,14 @@
             <section class="why-choose-us">
                 <h2>Why Choose Ndlovu Poultry Farm?</h2>
                 <ul class="benefits">
-                    <li> Quality assured products</li>
-                    <li> Affordable pricing</li>
-                    <li> Professional services</li>
-                    <li> Reliable delivery</li>
-                    <li> Friendly customer service</li>
-                    <li> Supporting local community</li>
-                    <li> Flexible payment options</li>
-                    <li> Fresh products guaranteed</li>
+                    <li>Quality assured products</li>
+                    <li>Affordable pricing</li>
+                    <li>Professional services</li>
+                    <li>Reliable delivery</li>
+                    <li>Friendly customer service</li>
+                    <li>Supporting local community</li>
+                    <li>Flexible payment options</li>
+                    <li>Fresh products guaranteed</li>
                 </ul>
             </section>
         </section>
@@ -194,14 +200,11 @@
     <footer class="footer">
         <div class="footer-content">
             <p>&copy; 2026 Ndlovu Poultry Farm. All rights reserved.</p>
-            <p> Phone: +27 79 789 4567 | 📧 Email: info@ndlovupoultry.com</p>
+            <p> Phone: +27 79 789 4567 |  Email: info@ndlovupoultry.com</p>
             <p> Address: Mpumalanga, South Africa</p>
         </div>
     </footer>
+<script src="css/js/script.js"></script>
 
 </body>
-</html></p>
-
-        
-    </body>
-  </html>
+</html>
