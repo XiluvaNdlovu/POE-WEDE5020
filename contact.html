@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ndlovu Poultry Farm - Contact Us</title>
-    <meta name="description" content="Contact Ndlovu Poultry Farm in Mpumalanga by phone, WhatsApp or email.">
-    <meta name="keywords" content="contact poultry farm, Ndlovu Poultry Farm phone, Mpumalanga">
-    <meta name="author" content="Xiluva Ndlovu">
+<meta name="description" content="Contact Ndlovu Poultry Farm in Mpumalanga by phone, WhatsApp or email.">
+<meta name="keywords" content="contact poultry farm, Ndlovu Poultry Farm phone, Mpumalanga">
+<meta name="author" content="Xiluva Ndlovu">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 </head>
+<script src="js/script.js"></script>
 <body>
     <!-- NAVIGATION MENU -->
     <nav class="navbar">
@@ -69,7 +69,7 @@
                 <!-- CONTACT FORM -->
                 <div class="contact-form">
                     <h2>Send us a Message</h2>
-                    <form id="contactForm" action="mailto:info@ndlovupoultry.com" method="post" enctype="text/plain" novalidate>
+                    <form>
                         <div class="form-group">
                             <label for="name">Full Name *</label>
                             <input type="text" id="name" name="name" required>
@@ -86,17 +86,6 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="messageType">Message Type *</label>
-                            <select id="messageType" name="messageType">
-                                <option value="">Select a type...</option>
-                                <option value="General Question">General Question</option>
-                                <option value="Feedback">Feedback</option>
-                                <option value="Complaint">Complaint</option>
-                                <option value="Partnership">Partnership</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group">
                             <label for="subject">Subject *</label>
                             <input type="text" id="subject" name="subject" required>
                         </div>
@@ -110,11 +99,17 @@
                     </form>
                 </div>
             </div>
-
-            <!-- MAP -->
             <div class="map-container">
                 <h2>Find Us</h2>
-                <div id="map"></div>
+                <iframe
+                    src="https://www.google.com/maps?q=Mpumalanga,South+Africa&output=embed"
+                    width="100%"
+                    height="350"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    title="Map showing Ndlovu Poultry Farm location in Mpumalanga">
+                </iframe>
             </div>
         </section>
     </main>
@@ -127,8 +122,5 @@
             <p> Address: Mpumalanga, South Africa</p>
         </div>
     </footer>
-
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <script src="js/script.js"></script>
 </body>
 </html>

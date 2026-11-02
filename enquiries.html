@@ -66,7 +66,8 @@
                 <!-- ENQUIRY FORM -->
                 <div class="enquiry-form">
                     <h2>Submit Your Enquiry</h2>
-                    <form id="enquiryForm" action="https://jsonplaceholder.typicode.com/post" methods="post" novalidate></form>                                                                                          <div class="form-group">
+                    <form>
+                        <div class="form-group">
                             <label for="name">Full Name *</label>
                             <input type="text" id="name" name="name" required>
                         </div>
@@ -96,7 +97,7 @@
 
                         <div class="form-group">
                             <label for="quantity">Quantity Needed (if applicable)</label>
-                            <input type="number" id="quantity" name="quantity" min="1" placeholder="e.g 10">
+                            <input type="text" id="quantity" name="quantity" placeholder="e.g., 10 chickens, 20 dozen eggs">
                         </div>
 
                         <div class="form-group">
@@ -114,7 +115,6 @@
                         </div>
 
                         <button type="submit" class="btn">Submit Enquiry</button>
-                        <div id="enquiryResult"></div>
                     </form>
                 </div>
             </div>
