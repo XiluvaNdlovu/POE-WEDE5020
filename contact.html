@@ -1,15 +1,134 @@
 <!DOCTYPE html>
-  <html>
-    <head>
-        <title>
-          Contacts
-        </title>
-    </head>
-    <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ndlovu Poultry Farm - Contact Us</title>
+    <meta name="description" content="Contact Ndlovu Poultry Farm in Mpumalanga by phone, WhatsApp or email.">
+    <meta name="keywords" content="contact poultry farm, Ndlovu Poultry Farm phone, Mpumalanga">
+    <meta name="author" content="Xiluva Ndlovu">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+</head>
+<body>
+    <!-- NAVIGATION MENU -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h2>🐔 Ndlovu Poultry Farm</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                <li><a href="enquiries.html" class="nav-link">Enquiries</a></li>
+            </ul>
+        </div>
+    </nav>
 
-<h1>contact</h1>
+    <!-- MAIN CONTENT -->
+    <main class="container">
+        <section class="contact">
+            <h1>Contact Us</h1>
+            <p>Get in touch with Ndlovu Poultry Farm. We'd love to hear from you!</p>
 
+            <div class="contact-content">
+                <!-- CONTACT DETAILS -->
+                <div class="contact-details">
+                    <h2>Contact Information</h2>
 
-        
-    </body>
-  </html>
+                    <div class="contact-item">
+                        <h3> Phone</h3>
+                        <p>+27 79 789 4567</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h3> Email</h3>
+                        <p>info@ndlovupoultry.com</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h3> Address</h3>
+                        <p>Mpumalanga<br>South Africa</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h3> WhatsApp</h3>
+                        <p>+27 79 789 4567</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h3> Business Hours</h3>
+                        <p>Monday - Friday: 8:00 AM - 5:00 PM<br>
+                           Saturday: 9:00 AM - 2:00 PM<br>
+                           Sunday: Closed</p>
+                    </div>
+                </div>
+
+                <!-- CONTACT FORM -->
+                <div class="contact-form">
+                    <h2>Send us a Message</h2>
+                    <form id="contactForm" action="mailto:info@ndlovupoultry.com" method="post" enctype="text/plain" novalidate>
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="messageType">Message Type *</label>
+                            <select id="messageType" name="messageType">
+                                <option value="">Select a type...</option>
+                                <option value="General Question">General Question</option>
+                                <option value="Feedback">Feedback</option>
+                                <option value="Complaint">Complaint</option>
+                                <option value="Partnership">Partnership</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- MAP -->
+            <div class="map-container">
+                <h2>Find Us</h2>
+                <div id="map"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Ndlovu Poultry Farm. All rights reserved.</p>
+            <p> Phone: +27 79 789 4567 |  Email: info@ndlovupoultry.com</p>
+            <p> Address: Mpumalanga, South Africa</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
